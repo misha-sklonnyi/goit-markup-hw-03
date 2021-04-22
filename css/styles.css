@@ -46,23 +46,29 @@ body {
   margin-left: auto;
 }
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  width: 1600px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 1px solid #ececec;
 }
 
 .page-header .container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .link {
+  display: flex;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--title-cl);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link:hover,
@@ -98,7 +104,7 @@ body {
 .menu {
   display: inline-flex;
 }
-.menu-item {
+.menu-nav > .link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -145,6 +151,7 @@ body {
 }
 
 .key {
+  border: none;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
@@ -192,6 +199,9 @@ body {
   margin-bottom: 0%;
   font-family: var(--main-font);
   color: var(--title-cl);
+  padding-right: 59px;
+  padding-bottom: 10px;
+  padding-left: 60px;
 }
 
 .hang {
@@ -219,14 +229,21 @@ body {
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
+.team-item {
+  width: 270px;
+  background-color: var(--doc-bg);
+}
+.foto-team {
+  border-radius: 0px;
+  padding-bottom: 30px;
+}
 
 .dark-bg {
   background-color: var(--dark-bg);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.dark-bg .logo {
-  padding-top: 60px;
-}
 .address {
   margin-top: 0;
   margin-bottom: 0;
@@ -238,16 +255,16 @@ body {
 }
 .title-lable {
   color: var(--main-text-cl);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
+
 .list .team {
   margin-top: 30px;
 }
 
-.list .lable-team {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-top: 10px;
-}
 .lable-hang {
   margin-top: 0;
   margin-bottom: 0;
@@ -270,7 +287,6 @@ body {
 }
 .dark-bg .list {
   flex-direction: column;
-  padding-bottom: 60px;
 }
 
 .vault-navi {
@@ -286,6 +302,9 @@ body {
 }
 
 /*портфолио*/
+.container > .list-portfolio {
+  margin-bottom: 34px;
+}
 
 .list-portfolio {
   display: flex;
@@ -348,13 +367,13 @@ body {
   color: var(--title-cl);
   padding: 6px 22px;
   background-color: var(--team-bg);
-  border: 1px solid transparent;
+  border: none;
 }
 
 .nav-portfolio:hover,
 .nav-portfolio:focus {
-  color: var(--title-cl);
-  border: 1px solid var(--accent-bg);
+  color: var(--alt-title-cl);
+  background-color: var(--accent-bg);
 }
 
 .section-title-pf {
