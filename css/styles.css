@@ -166,6 +166,10 @@ body {
   color: var(--alt-title-cl);
 }
 
+.priority {
+  margin-top: 94px;
+}
+
 .hide {
   display: none;
 }
