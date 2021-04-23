@@ -95,6 +95,7 @@ body {
 
 .list {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -169,6 +170,9 @@ body {
 .priority {
   margin-top: 94px;
 }
+.list > .lable-hang:not(:last-child) {
+  margin-right: 30px;
+}
 
 .hide {
   display: none;
@@ -203,9 +207,7 @@ body {
   margin-bottom: 0%;
   font-family: var(--main-font);
   color: var(--title-cl);
-  padding-right: 59px;
-  padding-bottom: 10px;
-  padding-left: 60px;
+  margin-bottom: 10px;
 }
 
 .hang {
@@ -274,7 +276,7 @@ body {
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 10px;
+  color: var(--main-text-cl);
 }
 
 .lable-team {
